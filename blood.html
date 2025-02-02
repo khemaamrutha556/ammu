@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Blood Donation System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#donate">Donate Blood</a></li>
+            <li><a href="#find">Find a Donor</a></li>
+        </ul>
+    </nav>
+    <section id="donate">
+        <h2>Donate Blood</h2>
+        <form id="donateForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="blood_type">Blood Type:</label>
+            <input type="text" id="blood_type" name="blood_type" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <section id="find">
+        <h2>Find a Donor</h2>
+        <form id="findForm">
+            <label for="search_blood_type">Blood Type:</label>
+            <input type="text" id="search_blood_type" name="search_blood_type" required>
+            <button type="submit">Find Donor</button>
+        </form>
+        <div id="results"></div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
